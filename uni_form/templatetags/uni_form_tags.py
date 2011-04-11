@@ -57,6 +57,8 @@ these files are loaded.
 """
     if 'MEDIA_URL' not in context:
         context['MEDIA_URL'] = settings.MEDIA_URL
+    if 'STATIC_URL' not in context:
+        context['STATIC_URL'] = settings.STATIC_URL
     return (context)
 
 ############################################################################
